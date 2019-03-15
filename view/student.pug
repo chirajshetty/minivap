@@ -1,0 +1,16 @@
+html
+    body
+        p Student Portal
+        hr 
+        p Name : #{name}
+        p Registered Courses
+        p #{course}
+        br 
+        form(action="/add" method="post")
+                    input(type="submit" value= "add courses")
+        form(action="/delete" method="post")
+                    input(type="submit"  value= "delete courses")
+                    br
+        form(action="/login" method="post")
+                    input(type="submit" value= "back")
+                    br

@@ -1,0 +1,11 @@
+html
+    body   
+        h1 ADD Courses
+        p #{courses}
+        form(action="/add" method="get")
+            label Course code
+            input(type="text" name="course")
+            input(type="submit")
+        form(action="/student" method="get")
+            input(type="submit" value ="back")
+        
